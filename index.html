@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Recommendations</title>
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font to the whole site */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Brand Name -->
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-gray-900">TechRecs</span>
+                </div>
+                <!-- Navigation Links -->
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="#laptops" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Laptops</a>
+                    <a href="#keyboards" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Keyboards</a>
+                    <a href="#mice" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Mice</a>
+                    <a href="#monitors" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Monitors</a>
+                </div>
+                <!-- Simple CTA Button -->
+                <div class="flex items-center">
+                    <a href="about.html" class="hidden sm:inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                        About Me
+                    </a>
+                </div>
+                <!-- Mobile Menu Button (Optional, simple nav for now) -->
+                <div class="sm:hidden flex items-center">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Icon when menu is closed. -->
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <div class="bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+                    <span class="block">Curated Tech.</span>
+                    <span class="block text-blue-600">No Hype. Just Quality.</span>
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    This is my personal list of the tech that I use and reviewed. All recommendations include proof and detailed explanations to help you make informed decisions.
+                </p>
+                <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+                    <div class="rounded-md shadow">
+                        <a href="#laptops" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
+                            See The Gear
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Sections -->
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+            <!-- Laptops Section -->
+            <section id="laptops" class="mb-16 scroll-mt-20">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Laptops</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Product Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-xl">
+                        <img class="h-56 w-full object-cover" src="https://placehold.co/600x400/334155/e2e8f0?text=Zenbook+S16" alt="Asus Zenbook S16 Laptop">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Asus Zenbook S16 (Productivity)</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">
+                                Known for it's display and speakers, a sleek and modern design.
+                            </p>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full mb-4">All-Rounder</span>
+                            <a href="zenbook-s16.html" class="mt-auto inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-xl">
+                        <img class="h-56 w-full object-cover" src="https://placehold.co/600x400/7f1d1d/e2e8f0?text=Legion+5i+16" alt="Lenovo Legion 5i 16 Laptop">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Lenovo Legion 5i 16 (Gaming)</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">
+                                Raw Power that is needed for Engineering students and gamers alike.
+                            </p>
+                            <span class="inline-block bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full mb-4">Power User Pick</span>
+                            <a href="legion-5i.html" class="mt-auto inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-xl">
+                        <img class="h-56 w-full object-cover" src="https://placehold.co/600x400/1e40af/e2e8f0?text=BudgetBook+15" alt="BudgetBook 15 Laptop">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">BudgetBook 15 (Value)</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">
+                                For students or light users, you can't beat the value. It has a solid build, a comfortable keyboard, and enough performance for all daily tasks.
+                            </p>
+                            <span class="inline-block bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full mb-4">Best Value</span>
+                            <a href="budgetbook-15.html" class="mt-auto inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Monitors Section -->
+            <section id="monitors" class="mb-16 scroll-mt-20">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Monitors</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Product Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-xl">
+                        <img class="h-56 w-full object-cover" src="https://placehold.co/600x400/e0e7ff/3730a3?text=UltraView+4K" alt="4K Monitor">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Samsung G6</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">
+                                Stunning 4K resolution with vibrant colors and excellent viewing angles. Perfect for content creators and professionals who need precise color accuracy.
+                            </p>
+                            <span class="inline-block bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded-full mb-4">Creative's Choice</span>
+                            <a href="samsung-g6.html" class="mt-auto inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section> <!-- This was the missing tag -->
+
+
+            <!-- Keyboards Section -->
+            <section id="keyboards" class="mb-16 scroll-mt-20">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Keyboards</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Product Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-xl">
+                        <img class="h-56 w-full object-cover" src="https://placehold.co/600x400/4a5568/e2e8f0?text=MechanoKey+TKL" alt="Mechanical Keyboard">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">MechanoKey TKL</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">
+                                The perfect entry into mechanical keyboards. It's a TKL (tenkeyless) layout, so it saves space, and it comes with hot-swappable switches.
+                            </p>
+                            <span class="inline-block bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full mb-4">Typist's Dream</span>
+                            <a href="mechano-tkl.html" class="mt-auto inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                                Read Why
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-xl">
+                        <img class="h-56 w-full object-cover" src="https://placehold.co/600x400/f3f4f6/374151?text=SilentType+Pro" alt="Quiet Office Keyboard">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">SilentType Pro</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">
+                                If you work in an office (or just hate loud typing), this is for you. It uses quiet membrane switches but still feels tactile and responsive. Great ergonomics.
+                            </p>
+                            <span class="inline-block bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full mb-4">Office Favorite</span>
+                            <a href="silenttype-pro.html" class="mt-auto inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                                Read Why
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Mice Section -->
+            <section id="mice" class="mb-16 scroll-mt-20">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Mice</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Product Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-xl">
+                        <img class="h-56 w-full object-cover" src="https://placehold.co/600x400/dbeafe/1e3a8a?text=ErgoPoint+Master" alt="Ergonomic Mouse">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">ErgoPoint Master</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">
+                                I use this mouse 8 hours a day. The ergonomic shape is a lifesaver, and the "infinite" scroll wheel is a feature I can't live without.
+                            </p>
+                            <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full mb-4">Productivity King</span>
+                            <a href="ergo-master.html" class="mt-auto inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                                Read Why
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex space-x-6 md:order-2">
+                    <!-- Simple text links for social -->
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
+                        <span class="sr-only">Twitter</span>
+                        Twitter
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
+                        <span class="sr-only">YouTube</span>
+                        YouTube
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
+                        <span class="sr-only">GitHub</span>
+                        GitHub
+                    </a>
+                </div>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                    &copy; 2025 TechRecs. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
